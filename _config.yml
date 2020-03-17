@@ -1,0 +1,97 @@
+## => Language and Timezone
+lang: en # the language of your site, default as "en"
+
+## => Author and Social
+author:
+  name      : naheenosaur
+  email     : naheenosaur@gmail.com
+  github    : naheenosaur
+
+## => GitHub Repository (if the site is hosted by GitHub)
+#repository: naheenosaur.github.io
+#repository_tree: master
+
+## TOC
+toc:
+  selectors: "h1,h2"
+
+## => Paginate
+paginate: 8
+paginate_path: /page:num # don't change this unless for special need
+
+## => Comments
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: heesoty
+
+## => Pageview
+#pageview:
+#  provider: false # false (default), "leancloud", "custom"
+
+## => Search
+search:
+  provider: default # "default" (default), false, "google", "custom"
+##   Google Custom Search Engine
+#    google:
+#    custom_search_engine_id: # Google Custom Search Engine ID
+
+## => Analytics
+##############################
+analytics:
+  provider: google # false (default), "google", "custom"
+  ## Google Analytics
+  google:
+    tracking_id : UA-154896535-1
+    anonymize_ip: true
+
+## => Site Settings
+text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
+highlight_theme: default # code theme
+url     : https://naheenosaur.github.io  # the base hostname & protocol for your site e.g. https://www.someone.com
+baseurl : /heestory  # does not include hostname
+title   : divide and conquer
+#description: > # this means to ignore newlines until "Language & timezone"
+#  naheenosaur.kr
+
+## => Build
+markdown    : kramdown
+highlighter : rouge
+permalink   : /:title
+#permalink   : /:categories/:title #md에 명시하면 무시
+
+link-tags: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - package-lock.json
+  - package.json
+
+defaults:
+  - scope: ## post
+      path: ""
+      type: posts
+    values:
+      layout: article
+      sharing: true
+      license: true
+      aside:
+        toc: true
+      show_edit_on_github: false
+      show_subscribe: true
+      pageview: true
+      comments: true
+
+collections:
+  heestory:
+    output: true
+    permalink: /:collection/:categories/:title
+
+## => Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap

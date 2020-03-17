@@ -1,0 +1,18 @@
+# home 화면 : 최신 들
+# 상단 메뉴 바
+header:
+  # naheenosaur
+  - title: about
+    url: https://naheenosaur.github.io/naheenosaur
+  - title: post # tag 검색 화면 + 전체 글
+    url: https://naheenosaur.github.io/post #post.html
+  - title: review
+    url: https://naheenosaur.github.io/review/index
+  - title: algorithm
+    url: https://naheenosaur.github.io/algorithm/index
+  # g11n
+  - title: G11N
+    url: https://naheenosaur.github.io/g11n
+  # heestory
+  - title: heestory
+    url: /
